@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
     "start": "vue-cli-service serve --host 0.0.0.0 --port 8080 --mode production",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --dest _static",
