@@ -1,18 +1,24 @@
 <template>
-  <nav class="bg-gradient-to-r from-orange-500 to-gray-600">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="bg-gradient-to-b from-orange-600 to-gray-700 flex flex-row flex-nowrap ">
+    <router-link to="/" class="flex-1 rounded-lg">Home</router-link>
+    <router-link to="/about" class="flex-1 rounded-lg">About</router-link>
+    <router-link to="/who" class="flex-1 rounded-lg">Who am I</router-link>
   </nav>
   <router-view/>
 </template>
 
 <style lang="scss">
+body{
+  background-color: rgb(51 65 85);
+  color: rgb(203 213 225)
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  // color: #2c3e50;
 }
 
 nav {
@@ -20,7 +26,7 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: rgb(203 213 225);
 
     &.router-link-exact-active {
       color: #42b983;
