@@ -1,6 +1,9 @@
 <template>
-  <div class="hello bg-stone-600">
-    <h1>{{ msg }}</h1>
+  <div class="hello mt-20 bg-stone-600">
+    <h1 class="text-6xl mx-16 text-center md:text-left">
+      Hello, I am <span class="text-orange-800">Basile Maillé</span>
+    </h1>
+    <!-- <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -27,7 +30,7 @@
       <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 

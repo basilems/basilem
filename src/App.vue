@@ -12,6 +12,9 @@
   <div class="bg-slate-300">
     <router-view/>
   </div>
+  <footer>
+    This is a fotter
+  </footer>
 </template>
 
 <style lang="scss">
