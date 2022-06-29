@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gradient-to-b from-orange-600 to-gray-700 flex items-center justify-center">
+  <nav class="bg-gradient-to-b from-orange-600 to-gray-100 dark:to-gray-700 flex items-center justify-center">
     <div class="w-full max-w-sm self-end">
       <img src="@/assets/BM.svg" class="h-full w-12 sm:w-32">
     </div>
@@ -8,14 +8,24 @@
       <router-link to="/about" class="flex-auto rounded-lg">About</router-link>
       <router-link to="/who" class="flex-auto rounded-lg">Who am I</router-link>
     </div>
+
   </nav>
-  <div class="bg-slate-300">
+  <div class="">
     <router-view/>
   </div>
-  <footer>
+  <footer class="self-end">
     This is a fotter
   </footer>
 </template>
+
+<script setup>
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+</script>
 
 <style lang="scss">
 body{
