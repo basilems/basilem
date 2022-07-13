@@ -1,12 +1,13 @@
 <template>
-  <nav class="bg-gradient-to-b from-orange-600 to-gray-100 dark:to-gray-700 flex items-center justify-center">
-    <div class="w-full max-w-sm self-end">
+  <nav class="bg-gradient-to-b from-orange-600 to-gray-100 dark:to-gray-700 flex items-center justify-between">
+    <div class="w-full max-w-sm self-end grow">
       <img src="@/assets/BM.svg" class="h-full w-12 sm:w-32">
     </div>
-    <div class="w-full flex justify-start">
-      <router-link to="/" class="flex-auto rounded-lg">Home</router-link>
-      <router-link to="/about" class="flex-auto rounded-lg">About</router-link>
-      <router-link to="/who" class="flex-auto rounded-lg">Who am I</router-link>
+    <div class="hidden"></div>
+    <div class="w-full grid grid-cols-3 justify-end grow-0">
+      <router-link to="/" class="rounded-lg">Home</router-link>
+      <router-link to="/who" class="rounded-lg">Who am I</router-link>
+      <router-link to="/about" class="rounded-lg">About</router-link>
     </div>
 
   </nav>

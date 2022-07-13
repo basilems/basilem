@@ -1,7 +1,7 @@
 <template>
   <div class="hello mt-20">
     <h1 class="text-6xl mx-16 text-center md:text-left">
-      Hello, I am <span class="text-orange-800">Basile Maillé</span>
+      Hello, I am <span class="text-orange-600">Basile Maillé</span>
     </h1>
   </div>
 </template>
