@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <nav class="bg-white border-gray-200 drop-shadow-lg px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="https://basilem.net/" class="flex items-center">
           <img src="@/assets/BM.svg" class="h-6 mr-3 sm:h-9" alt="Website Logo">
@@ -29,17 +29,16 @@
   <div class="">
     <router-view/>
   </div>
-  <footer class="self-end">
-    This is a fotter
-  </footer>
+  <FooterVue/>
 </template>
 
-<script setup>
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
-} else {
-  document.documentElement.classList.remove('dark')
+<script>
+import FooterVue from './components/Footer.vue'
+
+export default {
+  components: {
+    FooterVue
+  }
 }
 </script>
 
